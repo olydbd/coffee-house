@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/coffee-cup.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <a href="" class="logo__link">
+                        <img src="assets/images/logo.svg" alt="Logo picture" class="logo__pic">
+                    </a>
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#favorites" class="header__link">Favorite coffee</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#about" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#mobile" class="header__link">Mobile app</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#footer" class="header__link">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__coffee-menu">
+                    <a href="./menu/menu.html" class="header__coffee-menu-link header__link">
+                        <p class="coffee-menu-text">Menu</p>
+                        <img src="assets/images/coffee-cup.svg" alt="Coffee Cup icon" class="coffee-menu-pic">
+                    </a>
+                </div>
+
+                <div class="header__burger-menu" onclick="showBurger()">
+                    <div class="burger-menu__container">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-menu__burger">
+                <nav class="header__nav-burger">
+                    <ul class="header__list-burger">
+                        <li class="header__item-burger">
+                            <a href="#favorites" class="header__link-burger" onclick="hideBurger()">Favorite coffee</a>
+                        </li>
+                        <li class="header__item-burger">
+                            <a href="#about" class="header__link-burger" onclick="hideBurger()">About</a>
+                        </li>
+                        <li class="header__item-burger">
+                            <a href="#mobile" class="header__link-burger" onclick="hideBurger()">Mobile app</a>
+                        </li>
+                        <li class="header__item-burger">
+                            <a href="#footer" class="header__link-burger" onclick="hideBurger()">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="header__coffee-menu-burger">
+                    <a href="./menu/menu.html" class="header__coffee-menu-link header__link-burger">
+                        <p class="coffee-menu-text">Menu</p>
+                        <img src="assets/images/coffee-cup.svg" alt="Coffee Cup icon" class="coffee-menu-pic" width="40px" height="40px">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+</body>
+</html>
