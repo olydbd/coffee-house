@@ -1,1 +1,1 @@
-**Deploy:** https://olydbd.github.io/coffee-house/
+**Deploy:** https://olydbd.github.io/coffee-house/coffee-house/index.html
