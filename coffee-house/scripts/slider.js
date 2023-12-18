@@ -36,7 +36,6 @@ function showSlides(n) {
         slides[i].style.transform = "translateX(-200%)"
     }
   }
-
   clearTimeout(timer);
   timer = setTimeout(() => plusSlides(1), 2000);
 }
