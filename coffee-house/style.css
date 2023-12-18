@@ -414,3 +414,104 @@ span {
 .mobile-screens {
     max-width: 100%;
 }
+
+/* footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    padding: 100px;
+    background-color: #665F55;
+    border-radius: 40px;
+}
+.footer-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 530px;
+}
+.footer-offer-heading {
+    color: #E1D4C9;
+}
+.footer-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.button-social {
+    border-radius: 100px;
+    border: 1px solid #C1B6AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    transition: 0.5s ease-in-out;
+}
+@media (hover: hover) {
+    .button-social:hover {
+        background: #E1D4C9;
+    }
+    .social-svg .social {
+        transition: 0.4s;
+        transition-timing-function: ease-in-out;
+    }
+    .button-social:hover .social {
+        stroke: #665F55;
+    }
+}
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contacts-info-text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    color: #E1D4C9;
+}
+.contact-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.info-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: #E1D4C9;
+}
+.info-link-link {
+    position: relative;
+	transition: color 0.5s ease-in-out;
+}
+@media (hover: hover) {
+    .info-link-link::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 2px;
+        margin-top: 4px;
+        background-color: #E1D4C9;
+        transform: scaleX(0);
+        transition: transform 0.7s ease-in-out;
+    }
+    .info-link-link:hover::before {
+        transform: scaleX(1);
+    }
+}
+.info-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
